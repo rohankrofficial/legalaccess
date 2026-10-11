@@ -6,4 +6,161 @@
   <title>LegalAccess | All Legal Resources. One Place.</title>
   <meta name="description" content="LegalAccess is a free directory of legal resources, official legal websites, judgments, legislation and research tools for law students.">
   <style>
-    * { box-sizing: border
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 45px 18px 30px;
+      background: #111;
+      border-bottom: 1px solid #b99a50;
+    }
+    .logo { font-size: 38px; font-weight: bold; color: #d9b45b; }
+    header p { color: #ddd; margin: 8px 0; }
+    .founder { font-size: 13px; color: #aaa; }
+    main { max-width: 1050px; margin: auto; padding: 25px 16px; }
+    .intro { text-align: center; margin-bottom: 25px; }
+    input {
+      width: 100%;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #b99a50;
+      background: #171717;
+      color: white;
+      font-size: 16px;
+      margin: 12px 0 25px;
+    }
+    h2 { color: #d9b45b; font-size: 22px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      padding: 18px;
+      background: #151515;
+      border: 1px solid #333;
+      border-radius: 10px;
+    }
+    .card h3 { color: #e2c477; margin-top: 0; }
+    .card a {
+      display: block;
+      color: #eee;
+      text-decoration: none;
+      padding: 7px 0;
+      border-bottom: 1px solid #292929;
+    }
+    .card a:hover { color: #d9b45b; }
+    .note { color: #aaa; font-size: 13px; margin-top: 25px; }
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      border-top: 1px solid #333;
+      color: #aaa;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LegalAccess</div>
+    <p>All Legal Resources. One Place.</p>
+    <div class="founder">Founded by Rohan Kumar</div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h2>Explore Legal Resources</h2>
+      <p>A free directory of useful legal websites for students and researchers.</p>
+    </div>
+
+    <input id="search" type="search" placeholder="Search resources..." aria-label="Search legal resources">
+
+    <section class="grid" id="resources">
+      <div class="card">
+        <h3>Indian Laws</h3>
+        <a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">India Code — Acts and legislation</a>
+        <a href="https://legislative.gov.in/" target="_blank" rel="noopener">Legislative Department</a>
+        <a href="https://egazette.gov.in/" target="_blank" rel="noopener">e-Gazette of India</a>
+      </div>
+
+      <div class="card">
+        <h3>Judgments & Courts</h3>
+        <a href="https://www.sci.gov.in/" target="_blank" rel="noopener">Supreme Court of India</a>
+        <a href="https://delhihighcourt.nic.in/" target="_blank" rel="noopener">Delhi High Court</a>
+        <a href="https://judgments.ecourts.gov.in/" target="_blank" rel="noopener">eCourts Judgments</a>
+      </div>
+
+      <div class="card">
+        <h3>Legal Research</h3>
+        <a href="https://indiankanoon.org/" target="_blank" rel="noopener">Indian Kanoon</a>
+        <a href="https://www.livelaw.in/" target="_blank" rel="noopener">LiveLaw</a>
+        <a href="https://www.barandbench.com/" target="_blank" rel="noopener">Bar & Bench</a>
+      </div>
+
+      <div class="card">
+        <h3>Regulatory Authorities</h3>
+        <a href="https://www.rbi.org.in/" target="_blank" rel="noopener">Reserve Bank of India</a>
+        <a href="https://www.sebi.gov.in/" target="_blank" rel="noopener">SEBI</a>
+        <a href="https://www.mca.gov.in/" target="_blank" rel="noopener">Ministry of Corporate Affairs</a>
+        <a href="https://fiuindia.gov.in/" target="_blank" rel="noopener">FIU-IND</a>
+      </div>
+
+      <div class="card">
+        <h3>International Law</h3>
+        <a href="https://www.un.org/en/" target="_blank" rel="noopener">United Nations</a>
+        <a href="https://uncitral.un.org/" target="_blank" rel="noopener">UNCITRAL</a>
+        <a href="https://www.icj-cij.org/" target="_blank" rel="noopener">International Court of Justice</a>
+        <a href="https://www.fatf-gafi.org/" target="_blank" rel="noopener">FATF</a>
+      </div>
+
+      <div class="card">
+        <h3>ADR & Arbitration</h3>
+        <a href="https://www.uncitral.org/" target="_blank" rel="noopener">UNCITRAL Resources</a>
+        <a href="https://www.lcia.org/" target="_blank" rel="noopener">LCIA</a>
+        <a href="https://iccwbo.org/dispute-resolution/" target="_blank" rel="noopener">ICC Dispute Resolution</a>
+      </div>
+
+      <div class="card">
+        <h3>Legal Education</h3>
+        <a href="https://lawcommissionofindia.nic.in/" target="_blank" rel="noopener">Law Commission of India</a>
+        <a href="https://www.ugc.gov.in/" target="_blank" rel="noopener">University Grants Commission</a>
+        <a href="https://www.nls.ac.in/" target="_blank" rel="noopener">NLSIU</a>
+      </div>
+
+      <div class="card">
+        <h3>Cyber & Digital Law</h3>
+        <a href="https://www.meity.gov.in/" target="_blank" rel="noopener">MeitY</a>
+        <a href="https://www.cybercrime.gov.in/" target="_blank" rel="noopener">National Cyber Crime Portal</a>
+        <a href="https://www.cert-in.org.in/" target="_blank" rel="noopener">CERT-In</a>
+      </div>
+    </section>
+
+    <p class="note">LegalAccess is an independent directory. Links lead to external websites; their content and availability are controlled by the respective providers. Always verify laws and judgments from official sources.</p>
+  </main>
+
+  <footer>
+    © 2026 LegalAccess | Founded by Rohan Kumar
+  </footer>
+
+  <script>
+    const search = document.getElementById('search');
+    const cards = document.querySelectorAll('.card');
+
+    search.addEventListener('input', function () {
+      const query = this.value.toLowerCase().trim();
+
+      cards.forEach(function (card) {
+        card.style.display = card.innerText.toLowerCase().includes(query)
+          ? ''
+          : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
